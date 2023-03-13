@@ -6,23 +6,23 @@
     <form action="thanks.php" method="post">
         <div>
             <label for="lastName">Nom :</label>
-            <input type="text" id="lastName" name="userLastName">
+            <input type="text" id="lastName" name="userLastName" required>
         </div>
         <div>
             <label for="firstName">Prénom :</label>
-            <input type="text" id="firstName" name="userFirstName">
+            <input type="text" id="firstName" name="userFirstName" required>
         </div>
         <div>
             <label for="email">Courriel :</label>
-            <input type="text" id="email" name="userEmail">
+            <input type="email" id="email" name="userEmail" required>
         </div>
         <div>
             <label for="phonenum">Téléphone :</label>
-            <input type="text" id="phonenum" name="userPhoneNum">
+            <input type="text" id="phonenum" name="userPhoneNum" required>
         </div>
         <div>
             <label for="subjects">Sujet :</label>
-            <select name="userSubject" id="subjects">
+            <select name="userSubject" id="subjects" required>
                 <option value="comment">Commentaire</option>
                 <option value="issue">Problème</option>
                 <option value="suggestion">Suggestion</option>
@@ -31,10 +31,10 @@
         </div>
         <div>
             <label for="message">Message :</label>
-            <input type="textarea" id="message" name="userMessage">
+            <input type="textarea" id="message" name="userMessage" required>
         </div>
         <div class="button">
-            <input type="submit">Envoyer votre message</input>
+            <input type="submit" value="Envoyer votre message" required>
         </div>
     </form>
 </body>
